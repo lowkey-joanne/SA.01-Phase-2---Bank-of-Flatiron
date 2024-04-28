@@ -1,11 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 
-function SearchBox() {}
-    return (
-            <input type="text" className="SearchInput" placeholder="Search Your Recents Transactions..."/>
-
-    )
 function SearchBox({instateRecords, funcSetData}) {
     const [searchValue, setSearch] = useState("")
 
@@ -29,6 +24,7 @@ function handleSearch(e){
     </>
  )
 }
+
 
 export default SearchBox;
   
