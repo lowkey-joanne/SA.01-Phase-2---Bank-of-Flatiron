@@ -1,0 +1,47 @@
+App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0.3em;
+  display: grid; 
+  grid-gap: 0.5em;
+  justify-content: start;
+  grid-template-columns: 1fr;
+}
+
+
+.royaltitle{
+  background-color: rgb(202, 190, 23);
+  padding: 1em;
+  width: 100%;
+}
+
+.SearchInput{
+  width: 100%;
+  padding: 0.9em 0.5em;
+
+}
+
+.Transaction{
+  width: 100%;
+  padding: 0.9em;
+  box-shadow: 0 0 0 1px rgba(27, 24, 24, 0.6);
+  border: 1px solid grey;
+  border-radius: 7px;
+
+}
+.Transaction form {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  padding: 0.9em;
+  gap: 0.5em;
+}
+
+.Transaction form input{
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(48, 12, 12);
+  border-radius: 7px;
+  padding: 0.5em 0.9em;
+}
