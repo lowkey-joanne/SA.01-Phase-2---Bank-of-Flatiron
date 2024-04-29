@@ -11,7 +11,6 @@ function AddTransaction({funcSetData }) {
   function handleSubmit(e){
     e.preventDefault();
     let newTransaction = {
-      id: Math.floor(Math.random() * 200),
       date: indate,
       description: indescription,
       category: incategory,
@@ -27,6 +26,7 @@ function AddTransaction({funcSetData }) {
   return (
     <div className='Transaction'>
        <form onSubmit={handleSubmit}>
+            <div>
             <input type="date" required value={indate}  name='date'   onChange={(e) => setDate(e.target.value)} />
 
             <input type="text" 
@@ -39,6 +39,7 @@ function AddTransaction({funcSetData }) {
 
             <input type="text" required placeholder='Category'    name='category'  onChange={(e) => setCategory(e.target.value)} value={incategory}/>
             <input type="number" required placeholder='Amount'     name='amount' onChange={(e) => setAmount(e.target.value)}  value={inamount}/>
+            </div>
 
             <button>Add Transaction</button>
        </form>
