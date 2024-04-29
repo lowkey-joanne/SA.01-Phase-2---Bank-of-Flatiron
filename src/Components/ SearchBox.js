@@ -14,4 +14,3 @@ function SearchBox({searchValue, funcSetSearch}) {
 }
 
 export default SearchBox;
-  
