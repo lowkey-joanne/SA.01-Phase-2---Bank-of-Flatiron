@@ -25,24 +25,24 @@ function AddTransaction({funcSetData }) {
 
   return (
     <div className='Transaction'>
-       <form onSubmit={handleSubmit}>
-            <div>
-            <input type="date" required value={indate}  name='date'   onChange={(e) => setDate(e.target.value)} />
+        <form onSubmit={handleSubmit}>
+          <div>
+          <input type="date" required value={indate}  name='date'   onChange={(e) => setDate(e.target.value)} />
 
-            <input type="text" 
-            required
-            placeholder='Description'   
-            name='Description'
-            value={indescription} 
-            onChange={(e) => setDescription(e.target.value)}
-            />
+          <input type="text" 
+          required
+          placeholder='Description'   
+          name='Description'
+          value={indescription} 
+          onChange={(e) => setDescription(e.target.value)}
+          />
 
-            <input type="text" required placeholder='Category'    name='category'  onChange={(e) => setCategory(e.target.value)} value={incategory}/>
-            <input type="number" required placeholder='Amount'     name='amount' onChange={(e) => setAmount(e.target.value)}  value={inamount}/>
-            </div>
-
+          <input type="text" required placeholder='Category'    name='category'  onChange={(e) => setCategory(e.target.value)} value={incategory}/>
+          <input type="number" required placeholder='Amount'     name='amount' onChange={(e) => setAmount(e.target.value)}  value={inamount}/>
+          </div>
+        
             <button>Add Transaction</button>
-       </form>
+        </form>
     </div>
   );
 }
